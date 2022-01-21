@@ -8,9 +8,9 @@ const FirstSection = () => {
   return (
     <div className="container w-screen h-screen ">
       <div className="header-wrapper w-screen h-full bg-banner1 bg-cover bg-center text-gray-200 flex items-center justify-center md:flex-col md:items-start md:justify-start  lg:flex-col lg:items-start lg:justify-start xl:flex-col xl:items-start xl:justify-start xxl:flex-col xxl:items-start xxl:justify-start py-10 px-7">
-        <div className="header sm:hidden flex items-center justify-between w-full xl:mb-10 xxl:justify-around">
-          <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300">
-            <div className="hair flex flex-col items-start justify-center my-6 text-sm ">
+        <div className="header sm:hidden flex items-center justify-between w-full xl:mb-10 xxl:justify-around xxl:mt-5">
+          <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300 xxl:w-64">
+            <div className="hair flex flex-col items-start justify-center my-6 text-sm">
               <Chair className="w-12  mb-2" />
               <span className="text-xl mb-2">Hair Styling</span>
               <span className="mb-2">Haircut</span>
@@ -25,32 +25,34 @@ const FirstSection = () => {
               <span className="mb-2">Beard trim</span>
             </div>
           </div>
-          <div className="right w-48 h-full flex flex-col items-start justify-start p-5">
+          <div className="right w-48 h-full flex flex-col items-start justify-start p-5 xxl:w-64">
             <Cutter className="w-20" />
-            <p className="my-2.5 text-xl">
+            <p className="my-2.5 text-xl xxl:mt-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros elementum tristique.
             </p>
-            <span className="auth text-2xl mx-2.5">Alfred Hordberg</span>
+            <span className="auth text-2xl mx-2.5 xxl:mt-20 xxl:text-3xl">
+              Alfred Hordberg
+            </span>
           </div>
         </div>
         <div className="footer flex items-center justify-between w-full xl:self-center  flex-1">
           <div className="social sm:hidden md:hidden lg:hidden flex items-end justify-center w-full h-full mb-20">
             <FaFacebook
               size={30}
-              className="mx-5 cursor-pointer hover:scale-125 duration-700"
+              className="mx-5 cursor-pointer hover:scale-125 duration-700 hover:text-red-500"
             />
             <FaYoutube
               size={30}
-              className="mx-5 cursor-pointer hover:scale-125 duration-700"
+              className="mx-5 cursor-pointer hover:scale-125 duration-700 hover:text-red-500"
             />
             <FaTwitter
               size={30}
-              className="mx-5 cursor-pointer hover:scale-125 duration-700"
+              className="mx-5 cursor-pointer hover:scale-125 duration-700 hover:text-red-500"
             />
             <FaInstagram
               size={30}
-              className="mx-5 cursor-pointer hover:scale-125 duration-700"
+              className="mx-5 cursor-pointer hover:scale-125 duration-700 hover:text-red-500"
             />
           </div>
           <div className="xl:max-w-xl xl:border-l xxl:border-l px-3 xxl:self-end xxl:mb-10">
