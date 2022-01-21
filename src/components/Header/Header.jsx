@@ -3,9 +3,21 @@ import Logo from "../../assets/logo_white.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   const [dropdown, setDropdown] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  window.onscroll = () => {
+    if (window.scrollY > 300) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
 
   return (
-    <div className=" header fixed top-o w-screen h-16 bg-transparent ">
+    <div
+      className={`header fixed top-o w-screen h-16  ${
+        scroll ? "bg-black" : null
+      } duration-700`}
+    >
       <div className="header-wrapper w-full h-full px-4 flex items-center justify-between ">
         <img
           src={Logo}

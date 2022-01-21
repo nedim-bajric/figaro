@@ -9,15 +9,15 @@ const FirstSection = () => {
     <div className="container w-screen h-screen ">
       <div className="header-wrapper w-screen h-full bg-banner1 bg-cover bg-center text-gray-200 flex items-center justify-center md:flex-col md:items-start md:justify-start  lg:flex-col lg:items-start lg:justify-start xl:flex-col xl:items-start xl:justify-start xxl:flex-col xxl:items-start xxl:justify-start py-10 px-7">
         <div className="header sm:hidden flex items-center justify-between w-full xl:mb-10 xxl:justify-around xxl:mt-5">
-          <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300 xxl:w-64">
-            <div className="hair flex flex-col items-start justify-center my-6 text-sm">
+          <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300  xxl:flex-row xxl:w-96 xxl:h-64 xxl:justify-between xxl:items-center">
+            <div className="hair flex flex-col items-start justify-center my-6 text-sm xxl:items-center xxl:px-2">
               <Chair className="w-12  mb-2" />
               <span className="text-xl mb-2">Hair Styling</span>
               <span className="mb-2">Haircut</span>
               <span className="mb-2">Hair Coloring</span>
               <span className="mb-2">Hghlights</span>
             </div>
-            <div className="beard flex flex-col items-start justify-center my-6 text-sm ">
+            <div className="beard flex flex-col items-start justify-center my-6 text-sm xxl:items-center xxl:px-2">
               <Brush className="w-12 mb-2" />
               <span className="text-xl mb-2">Beard Styling</span>
               <span className="mb-2">Beard coloring</span>
