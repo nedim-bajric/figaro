@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+html,
+body {
+  font-family: "Playfair Display", serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.left {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.right {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.auth {
+  font-family: "Great Vibes", cursive;
+}
