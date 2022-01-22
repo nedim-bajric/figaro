@@ -1,4 +1,4 @@
-##Figaro - template from webflow
+### Figaro - template from webflow
 
 ### React.js, tailwind, react-scroll
 
