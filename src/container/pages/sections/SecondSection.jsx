@@ -2,7 +2,10 @@ import React from "react";
 
 const SecondSection = () => {
   return (
-    <div className="about-us w-screen h-screen bg-white xl:p-40 xxl:p-40 ">
+    <div
+      className="about-us w-screen h-screen bg-white xl:p-40 xxl:p-40 "
+      id="about"
+    >
       <div className="wrapper flex flex-col item-start justify-center px-10 py-20 md:h-full lg:h-full xl:max-h-lg  xl:max-w-4xl xl:mx-auto  xl:border-l-2 xl:border-black xxl:max-w-7xl xxl:m-auto xxl:border-l-2 xxl:border-black  xxl:max-h-xl">
         <span className="mt-1.5 mb-2.5 text-md font-sans text-gray-400 lg:text-2xl xxl:text-4xl">
           OUR STORY

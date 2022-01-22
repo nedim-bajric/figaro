@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import Header from "../components/Header/Header";
 import FirstSection from "../container/pages/sections/FirstSection";
 import SecondSection from "../container/pages/sections/SecondSection";
@@ -7,7 +6,7 @@ import SecondSection from "../container/pages/sections/SecondSection";
 const Mainlayaout = () => {
   return (
     <div className="w-screen h-full relative bg-black ">
-      <Header className="bg-black" />
+      <Header />
       <FirstSection />
       <SecondSection />
     </div>

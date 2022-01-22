@@ -6,7 +6,7 @@ import { ReactComponent as Cutter } from "../../../assets/icon_eq.svg";
 import { FaFacebook, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 const FirstSection = () => {
   return (
-    <div className="container w-screen h-screen ">
+    <div className="container w-screen h-screen" id="home">
       <div className="header-wrapper w-screen h-full bg-banner1 bg-cover bg-center text-gray-200 flex items-center justify-center md:flex-col md:items-start md:justify-start  lg:flex-col lg:items-start lg:justify-start xl:flex-col xl:items-start xl:justify-start xxl:flex-col xxl:items-start xxl:justify-start py-10 px-7">
         <div className="header sm:hidden flex items-center justify-between w-full xl:mb-10 xxl:justify-around xxl:mt-5">
           <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300  xxl:flex-row xxl:w-96 xxl:h-64 xxl:justify-between xxl:items-center">

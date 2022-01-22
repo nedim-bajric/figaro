@@ -16,3 +16,6 @@ body {
 .auth {
   font-family: "Great Vibes", cursive;
 }
+.active {
+  color: #ef4444;
+}

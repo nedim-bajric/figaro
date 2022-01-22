@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo_white.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
-const Header = () => {
+import { Link } from "react-scroll";
+const Header = ({ executeScroll }) => {
   const [dropdown, setDropdown] = useState(false);
   const [scroll, setScroll] = useState(false);
   window.onscroll = () => {
@@ -19,23 +20,49 @@ const Header = () => {
       } duration-700`}
     >
       <div className="header-wrapper w-full h-full px-4 flex items-center justify-between ">
-        <img
-          src={Logo}
-          className="w-28 cursor-pointer hover:scale-90 duration-700"
-        />
+        <Link to="home" spy={true} smooth={true}>
+          <img
+            src={Logo}
+            className="w-28 cursor-pointer hover:scale-90 duration-700"
+          />
+        </Link>
         <div className="sm:hidden md:hidden lg:hidden text-white text-xl  h-full w-full flex items-center justify-end ">
-          <span className="mx-3 cursor-pointer hover:scale-125 duration-700">
+          <Link
+            className="mx-3 cursor-pointer hover:scale-125 duration-700"
+            to="about"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+          >
             About Us
-          </span>
-          <span className="mx-3 cursor-pointer hover:scale-125 duration-700">
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            className="mx-3 cursor-pointer hover:scale-125 duration-700"
+          >
             Services
-          </span>
-          <span className="mx-3 cursor-pointer hover:scale-125 duration-700">
+          </Link>
+          <Link
+            to="book"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            className="mx-3 cursor-pointer hover:scale-125 duration-700"
+          >
             Book
-          </span>
-          <span className="mx-3 cursor-pointer hover:scale-125 duration-700">
+          </Link>
+          <Link
+            to="locations"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            className="mx-3 cursor-pointer hover:scale-125 duration-700"
+          >
             Locations
-          </span>
+          </Link>
         </div>
         <div
           className="hamburger-menu-container xl:hidden xxl:hidden"
@@ -49,10 +76,46 @@ const Header = () => {
       </div>
       {dropdown ? (
         <div className="xl:hidden xxl:hidden dropdown w-screen h-64 bg-black text-white duration-700 flex flex-col items-center justify-center font-semibold text-2xl">
-          <span className="my-3">About Us</span>
-          <span className="my-3">Services</span>
-          <span className="my-3">Book</span>
-          <span className="my-3">Locations</span>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            className="my-3"
+            activeClass="active"
+            onClick={() => setDropdown(!dropdown)}
+          >
+            About Us
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            className="my-3"
+            activeClass="active"
+            onClick={() => setDropdown(!dropdown)}
+          >
+            Services
+          </Link>
+          <Link
+            to="book"
+            spy={true}
+            smooth={true}
+            className="my-3"
+            activeClass="active"
+            onClick={() => setDropdown(!dropdown)}
+          >
+            Book
+          </Link>
+          <Link
+            to="locations"
+            spy={true}
+            smooth={true}
+            className="my-3"
+            activeClass="active"
+            onClick={() => setDropdown(!dropdown)}
+          >
+            Locations
+          </Link>
         </div>
       ) : null}
     </div>
