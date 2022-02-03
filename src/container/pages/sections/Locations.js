@@ -9,7 +9,7 @@ const Locations = () => {
     >
       <div className="wrapper w-full h-full py-20 xl:flex xxl:flex xxl:items-center">
         {data.map((item) => (
-          <Card item={item} />
+          <Card item={item} key={item.id} />
         ))}
       </div>
     </div>

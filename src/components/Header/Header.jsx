@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo_white.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 const Header = ({ executeScroll }) => {
   const [dropdown, setDropdown] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -12,7 +13,7 @@ const Header = ({ executeScroll }) => {
       setScroll(false);
     }
   };
-
+  const navigate = useNavigate();
   return (
     <div
       className={`header fixed top-o w-screen h-16  ${
@@ -63,6 +64,15 @@ const Header = ({ executeScroll }) => {
           >
             Locations
           </Link>
+          <span
+            className="mx-3 cursor-pointer hover:scale-125 duration-700"
+            onClick={() => {
+              window.localStorage.clear();
+              window.location.reload();
+            }}
+          >
+            Logout
+          </span>
         </div>
         <div
           className="hamburger-menu-container xl:hidden xxl:hidden"
