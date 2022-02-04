@@ -19,3 +19,7 @@ body {
 .active {
   color: #ef4444;
 }
+
+.height {
+  height: 100vh;
+}

@@ -126,6 +126,15 @@ const Header = ({ executeScroll }) => {
           >
             Locations
           </Link>
+          <span
+            className=""
+            onClick={() => {
+              window.localStorage.clear();
+              window.location.reload();
+            }}
+          >
+            Logout
+          </span>
         </div>
       ) : null}
     </div>

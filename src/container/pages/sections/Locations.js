@@ -5,7 +5,7 @@ const Locations = () => {
   return (
     <div
       id="locations"
-      className="locations w-screen h-full bg-black xxl:h-screen"
+      className="locations w-screen height bg-black xxl:h-screen"
     >
       <div className="wrapper w-full h-full py-20 xl:flex xxl:flex xxl:items-center">
         {data.map((item) => (
