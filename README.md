@@ -10,4 +10,4 @@ The idea of the project is for the user to be able to book an appointment with t
 ⚫ Firebase
 
 
-See live :https://61fd53b25ceb7a3dd521162b--figarobarber.netlify.app/
+See live  https://620560d951388609ad8610a7--figarobarber.netlify.app
