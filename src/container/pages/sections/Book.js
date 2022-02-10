@@ -3,7 +3,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 const Book = () => {
   return (
-    <div className="book w-screen height" id="book">
+    <div className="book w-screen h-screen" id="book">
       <div className="wrapper h-full w-full flex flex-col items-center justify-center py-20 px-10">
         <div className="text flex-3 flex flex-col items-center justify-start mt-12">
           <h1 className="text-3xl mb-3 xl:text-4xl xxl:text-7xl">

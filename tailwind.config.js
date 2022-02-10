@@ -5,7 +5,7 @@ module.exports = {
       sm: { max: "425px" },
       md: { min: "426px", max: "767px" },
       lg: { min: "768px", max: "1024px" },
-      xl: { min: "1024px", max: "1440px" },
+      xl: { min: "1024px", max: "1439px" },
       xxl: "1440px",
     },
     extend: {

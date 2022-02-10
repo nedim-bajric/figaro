@@ -2,7 +2,7 @@ import React from "react";
 import data from "../../../data/services.data";
 const ThirdSection = () => {
   return (
-    <div className="services w-screen height bg-white" id="services  ">
+    <div className="services w-screen bg-white" id="services">
       <div className="wrapper h-full w-full  py-32 px-12 flex flex-col items-center justify-center ">
         <h1 className="self-center text-4xl mb-20">Our Services</h1>
         <div className=" md:flex md:flex-wrap md:justify-between lg:flex lg:flex-wrap lg:justify-between xl:flex xl:flex-wrap xl:justify-between xxl:flex xxl:flex-wrap xxl:justify-center xxl:max-w-7xl">

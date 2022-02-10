@@ -46,6 +46,7 @@ const Login = ({ reg, setReg }) => {
               type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
+              onKeyPress={(e) => (e.key === "Enter" ? login : null)}
             />
           </div>
           <div className="flex items-center justify-between">
@@ -87,7 +88,7 @@ const Login = ({ reg, setReg }) => {
             </span>
           ) : null}
           <button
-            className="bg-red-500 text-2xl font-bold py-2 px-5 uppercase cursor-pointer text-white"
+            className="bg-red-500 text-2xl font-bold py-2 px-5 uppercase cursor-pointer text-white rounded"
             onClick={() => setMessage("")}
           >
             close

@@ -3,7 +3,7 @@ import React from "react";
 const SecondSection = () => {
   return (
     <div
-      className="about-us w-screen height  bg-white xl:p-40 xxl:p-40 mb-10"
+      className="about-us w-screen h-screen  bg-white xl:p-40 xxl:p-40 mb-10"
       id="about"
     >
       <div className="wrapper flex flex-col item-start justify-center px-10 py-20  md:h-full lg:h-full xl:max-h-lg  xl:max-w-4xl xl:mx-auto  xl:border-l-2 xl:border-black xxl:max-w-7xl xxl:m-auto xxl:border-l-2 xxl:border-black  xxl:max-h-xl">

@@ -31,7 +31,7 @@ const Mainlayaout = () => {
           <Locations />
         </div>
       ) : reg ? (
-        <Register />
+        <Register reg={reg} setReg={setReg} />
       ) : (
         <Login reg={reg} setReg={setReg} />
       )}

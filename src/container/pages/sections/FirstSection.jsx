@@ -4,9 +4,10 @@ import { ReactComponent as Chair } from "../../../assets/icon_chair.svg";
 import { ReactComponent as Brush } from "../../../assets/icon_brush.svg";
 import { ReactComponent as Cutter } from "../../../assets/icon_eq.svg";
 import { FaFacebook, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link } from "react-scroll";
 const FirstSection = () => {
   return (
-    <div className="container w-screen height" id="home">
+    <div className="container w-screen h-screen" id="home">
       <div className="header-wrapper p-16 w-screen h-full bg-banner1 bg-cover bg-center text-gray-200 flex items-center justify-center md:flex-col md:items-start md:justify-start  lg:flex-col lg:items-start lg:justify-start xl:flex-col xl:items-start xl:justify-start xxl:flex-col xxl:items-start xxl:justify-start ">
         <div className="header sm:hidden flex items-center justify-between w-full xl:mb-10 xxl:justify-around xxl:mt-5">
           <div className="left w-48 h-full  flex flex-col items-center justify-center text-gray-300  xxl:flex-row xxl:w-96 xxl:h-64 xxl:justify-between xxl:items-center">
@@ -56,7 +57,7 @@ const FirstSection = () => {
             />
           </div>
           <div className="xl:max-w-xl xl:border-l xxl:border-l px-3 xxl:self-end xxl:mb-10">
-            <h1 className="pb-2.5 text-4xl leading-10 xxl:text-6xl">
+            <h1 className="pb-2.5 text-4xl leading-10  xxl:text-6xl">
               We don`t cut, we style
             </h1>
             <p className="text-base pb-2.5 max-w-6xl xxl:text-2xl ">
@@ -64,9 +65,15 @@ const FirstSection = () => {
               pariatur mollit est incididunt. Labore dolore quis id ullamco
               reprehenderit ut proident eu ut.
             </p>
-            <span className="flex items-center justify-start text-red-500 text-2xl  cursor-pointer hover:translate-x-2 duration-700 ">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              activeClass="active"
+              className="flex items-center justify-start text-red-500 text-2xl  cursor-pointer hover:translate-x-2 duration-700 "
+            >
               Discover <BsArrowRight className="ml-2 mt-2" />
-            </span>
+            </Link>
           </div>
         </div>
       </div>

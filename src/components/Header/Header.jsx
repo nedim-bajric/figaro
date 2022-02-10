@@ -13,7 +13,6 @@ const Header = ({ executeScroll }) => {
       setScroll(false);
     }
   };
-  const navigate = useNavigate();
   return (
     <div
       className={`header fixed top-o w-screen h-16  ${

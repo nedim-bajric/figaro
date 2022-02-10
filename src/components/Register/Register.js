@@ -59,10 +59,11 @@ const Register = ({ reg, setReg }) => {
               placeholder="Confirm Password"
               required
               onChange={(e) => setconfPassword(e.target.value)}
+              onKeyPress={(e) => (e.key === "Enter" ? login : null)}
             />
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-between">
             <button
               className="cursor-pointer transition-colors duration-500 hover:bg-white hover:text-black font-mono text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
@@ -78,6 +79,13 @@ const Register = ({ reg, setReg }) => {
             >
               Create Account
             </button>
+            <span
+              className="inline-block cursor-pointer align-baseline font-bold text-sm transition-colors duration-500 text-gray-600 hover:text-white"
+              href="#"
+              onClick={() => setReg(!reg)}
+            >
+              Already have an account?
+            </span>
           </div>
         </form>
       </div>
@@ -88,7 +96,7 @@ const Register = ({ reg, setReg }) => {
             {message}
           </span>
           <button
-            className="bg-red-500 text-2xl font-bold py-2 px-5 uppercase cursor-pointer text-white"
+            className="bg-red-500 text-2xl font-bold py-2 px-5 uppercase cursor-pointer text-white rounded"
             onClick={() => setMessage("")}
           >
             close
