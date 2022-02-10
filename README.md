@@ -1,5 +1,12 @@
-### Figaro - template from webflow
+### Figaro
+## Template from webflow (modified)
 
-### React.js, tailwind, firebase, redux
+### Technologies and Tools I used
 
-netlify live :https://61fd53b25ceb7a3dd521162b--figarobarber.netlify.app/
+⚫React
+⚫Redux
+⚫Tailwind
+⚫Firebase
+
+
+ live :https://61fd53b25ceb7a3dd521162b--figarobarber.netlify.app/
